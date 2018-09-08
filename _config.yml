@@ -64,7 +64,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: a05a5f336cff6a9c0cd7                           #生成的clientID
   clientSecret: adc946f6bb3b15e63a6f52273b0a46e3953b7c1f    #生成的clientSecret
-  repo: inkinn.github.io    #仓库名称
+  repo: InkInn.github.io    #仓库名称
   owner: InkInn    #github用户名
   admin: InkInn
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
