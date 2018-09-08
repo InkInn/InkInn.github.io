@@ -25,7 +25,7 @@ tags:
 # 定位
 根据异常信息首先定位到
 
-```
+```java
 org.springframework.data.redis.connection.jedis.JedisConnection.zAddArgs
 ```
 
@@ -45,8 +45,12 @@ org.springframework.data.redis.connection.jedis.JedisConnection.zAddArgs
 # 思考
 spring-data-redis在这块为什么要限制jedis版本呢？对比了半天jedis的2.3和2.4版本，没发现什么不同。查阅资料redis的zadd历史
 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fv2htqwyfkj30y406mmy0.jpg)
-redis 2.4版本之后才支持批量操作。但是，这和jedis版本没多大关系吧😂😂
-.........持续思考中（撸码中）..........
+redis 2.4版本之后才支持批量操作。但是，这和jedis版本没多大关系吧😂😂  
+  
+     
+     
+
+<p align="center">.........持续思考中（撸码中）..........<p/>
 
 
 
