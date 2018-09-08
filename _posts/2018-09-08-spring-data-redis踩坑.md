@@ -23,7 +23,7 @@ tags:
 
 
 # 定位问题
-根据异常信息定位到
+根据异常信息首先定位到
 ```
 org.springframework.data.redis.connection.jedis.JedisConnection.zAddArgs
 ```
