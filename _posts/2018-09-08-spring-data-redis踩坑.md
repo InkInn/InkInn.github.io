@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      记一次spring-data-redis踩坑之旅
+title:      spring-data-redis踩坑
 subtitle:   记一次spring-data-redis踩坑之旅
 date:       2018-09-08
 author:     InkInn
