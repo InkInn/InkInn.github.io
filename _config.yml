@@ -11,7 +11,7 @@ github_repo: "https://github.com/InkInn/InkInn.github.io.git" # you code reposit
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "我认真写写，你随便看看"
 sidebar-avatar: /img/avatar.JPG      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
