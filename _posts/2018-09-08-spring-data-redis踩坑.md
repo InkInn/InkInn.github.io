@@ -4,7 +4,7 @@ title:      spring-data-redis踩坑
 subtitle:   记一次spring-data-redis踩坑之旅
 date:       2018-09-08
 author:     InkInn
-header-img: img/post-bg-re-vs-ng2.jpg
+header-img: img/post-bg-clock.jpg
 catalog: true
 tags:
     - redis
