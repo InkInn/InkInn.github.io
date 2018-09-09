@@ -48,10 +48,19 @@ spring-data-redis在这块为什么要限制jedis版本呢？对比了半天jedi
 redis 2.4版本之后才支持批量操作。但是，这和jedis版本没多大关系吧😂😂  
   
      
-     
-
+    
 <p align="center">.........持续思考中（撸码中）..........<p/>
 
+# 后续
+不死心，阅读jedis源码定位到这里:   
+`redis.clients.jedis.BinaryJedis.zadd(final byte[] key, final Map<byte[], Double> scoreMembers) `
 
+打开这个方法的git记录
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fv3nzkab2zj31kw07sgr4.jpg)
 
+这次修改允许批量添加score相同的元素，那之前为什么不能呢？对比此次提交之前的代码
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fv3o6jnxdaj31kw067q5l.jpg)
+我们注意到，map是传入zet元素的，修改之前是以score为key，member为value，修改之后以member为key，score为value，这样就解决了不能批量操作score相同的元素的bug。
+
+然而我发现jedis在2.3.0版本就解决了这个问题，spring-data-redis为什么要限制不低于2.4.0版本呢？浪费我大半天时间去看2.3和2.4版本的区别🤦‍♂️🤦‍♂️🤦‍♂️。学会看git提交记录还是很重要的（前提是要好好写😳😳）
 
